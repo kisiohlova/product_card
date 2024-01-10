@@ -26,6 +26,8 @@ gem "stimulus-rails"
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
 gem "tailwindcss-rails"
 
+gem "simple_form"
+
 gem "devise", "~> 4.9", ">= 4.9.3"
 
 # Use Redis adapter to run Action Cable in production
