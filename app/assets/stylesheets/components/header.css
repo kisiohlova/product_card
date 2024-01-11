@@ -1,0 +1,25 @@
+@layer components {
+  .nav {
+    @apply fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-gray-50 dark:bg-gray-900 dark:border-gray-600;
+  }
+
+  .nav-container {
+    @apply flex items-center justify-between w-full lg:w-auto;
+  }
+
+  .nav-element-container {
+    @apply flex items-center space-x-4;
+  }
+
+  .nav-name {
+    @apply mr-4 text-2xl font-semibold duration-300 transform whitespace-nowrap dark:text-gray-400;
+  }
+
+  .nav-element {
+    @apply flex-shrink-0 text-xl font-semibold text-gray-700 duration-300 transform whitespace-nowrap dark:text-gray-400;
+  }
+
+  .nav-user {
+    @apply mr-2 text-gray-500 duration-300 transform dark:text-gray-400;
+  }
+}

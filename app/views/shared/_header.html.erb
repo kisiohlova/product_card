@@ -1,0 +1,15 @@
+<nav class="nav">
+  <div class="nav-container">
+    <div class="nav-element-container pl-3.5">
+      <%= link_to "ProductCard", root_path, class: "nav-name" %>
+    </div>
+    <div class="nav-element-container">
+      <% if user_signed_in? %>
+        <span class="nav-user">Hello, <%= current_user.email %></span>
+        <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn-blue m-3.5 " %>
+      <% else %>
+        <%= link_to "Sign In", new_user_session_path, class: "btn-blue m-3.5" %>
+      <% end %>
+    </div>
+  </div>
+</nav>
